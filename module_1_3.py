@@ -16,8 +16,10 @@ a = 17
 name = "Evgeniy"
 print("Name: ", name)
 age = 39
-print("Age: ", age)
+print("Age: ", age, id(age))
 age = age + 1
-print("New age: ", age)
+#  age = 40
+#  age += 1
+print("New age: ", age, id(age))
 is_student = True
 print("Is_student: ", is_student)
