@@ -20,6 +20,7 @@ print(average, type(students))
 
 #  Перевод в список с сортировкой
 students_list = list(students)
-students_dict = dict(zip(students_list, average))
-sort = sorted(students_dict.items())
-print(sort)
+#  Отсортировал список с расчётом, что оценки в grades указаны из расчёта алфавитного порядка имён
+sort = sorted(students_list)
+students_dict = dict(zip(sort, average))
+print(students_dict)
