@@ -29,6 +29,7 @@ def summ_list(*args, **kwargs):
             summ += len(item)  # Если строка - суммируем длину строки
     return summ
 
+# Объект из примера изменён
 nestedlist = [
     11, [1, 2, 3], 0, False, True,
     {'a': 4, 'b': 5, 'test' : 'tested!'},
@@ -36,7 +37,17 @@ nestedlist = [
     "Hello", 20, {13, 17},
     ((), [{(2, 'Urban', ('Urban2', 35))}])
 ]
+data_structure_origin = [
+  [1, 2, 3],
+  {'a': 4, 'b': 5},
+  (6, {'cube': 7, 'drum': 8}),
+  "Hello",
+  ((), [{(2, 'Urban', ('Urban2', 35))}])
+]
+
 t = flatten(nestedlist)
-print(t)
+t1 = flatten(data_structure_origin)
+print(t, '\n', t1)
 s = summ_list(nestedlist)
-print(s)
+s2 = summ_list(data_structure_origin)
+print(s, '\n', s2)
