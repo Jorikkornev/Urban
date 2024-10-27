@@ -6,7 +6,7 @@ def single_root_words(root_word, *other_words):
         word = word.lower()
         if word.count(root_word):
             same_words.append(word)
-        elif len(word) >= 3 and len(root_word) >= len(word) and  root_word.find(word) != -1:
+        elif 3 <= len(word) <= len(root_word) and  root_word.find(word) != -1:
             same_words.append(word)
             #  print('Root_word: ', root_word, 'Word: ', word)
     return same_words
