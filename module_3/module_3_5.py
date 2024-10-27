@@ -1,5 +1,5 @@
-
 def get_multiplied_digits(number):
+    """Пример использования рекурсии. Функция возвращает произведение чисел, составляющих число"""
     str_number = str(number)
     if len(str_number) <= 1:
         return int(str_number)  # Если длина строки с числом не больше 1, возвращаем это число
