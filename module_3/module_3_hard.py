@@ -1,6 +1,7 @@
 
-# Рекурсивная функция для сглаживания списка
+
 def flatten(lst):
+    """Рекурсивная функция для сглаживания списка"""
     result = []
     for item in lst:
         #  Для уменьшения количества рекурсий выполняется проверка пустых значений
@@ -16,8 +17,9 @@ def flatten(lst):
     return result
 
 def summ_list(*args, **kwargs):
+    """Функция получает список и суммирует его значения согласно условиям"""
     summ = 0
-    all_list = flatten(args)  # Заполнение массива данными
+    all_list = flatten(args)  # Заполнение списка данными
     for item in all_list:
         if isinstance(item, str) and item.isnumeric(): #  Если строка переводится в число - суммируем
             summ += int(item)
