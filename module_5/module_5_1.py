@@ -1,3 +1,4 @@
+# Домашняя работа по уроку "Атрибуты и методы объекта"
 class House:
     def __init__(self, house_addr, number_of_floors, ):
         self.house_addr = house_addr

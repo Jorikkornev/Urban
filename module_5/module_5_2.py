@@ -1,3 +1,4 @@
+#  5_2 Домашняя работа по уроку "Специальные методы классов
 class House:
     def __init__(self, house_addr, number_of_floors, ):
         self.house_addr = house_addr
