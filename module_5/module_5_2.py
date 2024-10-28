@@ -11,9 +11,21 @@ class House:
             while c <= new_floor:
                 print(c)
                 c += 1
+        return
+    def __len__(self):  # Возвращает количество этажей в len()
+        return self.number_of_floors
+
+    def __str__(self):
+        return (f"Название: {self.house_addr}, кол-во этажей: {self.number_of_floors}")
 
 if __name__ == "__main__":
-    win_street_1 = House('Победы 1', 13)
-    win_street_1.go_to(0)
-    win_street_1.go_to(10)
-    win_street_1.go_to(14)
+    h1 = House('ЖК Эльбрус', 10)
+    h2 = House('ЖК Акация', 20)
+
+    # __str__
+    print(h1)
+    print(h2)
+
+    # __len__
+    print(len(h1))
+    print(len(h2))
