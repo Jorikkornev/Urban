@@ -1,6 +1,6 @@
 # Домашнее задание по теме "Зачем нужно наследование"
 class Animal:
-    def __init__(self, name, alive = True, fed = False):
+    def __init__(self, name, alive=True, fed=False):
         self.alive = alive
         self.fed = fed
         self.name = name
@@ -14,30 +14,33 @@ class Animal:
                 print(f'{self.name} не стал есть {food.name}')
                 self.alive = False
 
+
 class Plant:
-    def __init__(self, name, edible = False):
+    def __init__(self, name, edible=False):
         self.name = name
         self.edible = edible
+
 
 #  Mammal, Predator, Flower, Fruit
 class Mammal(Animal):
     pass
 
+
 class Predator(Animal):
     pass
+
 
 class Flower(Plant):
     pass
 
+
 class Fruit(Plant):
-    def __init__(self, edible = False):
-        super().__init__(edible)
+    def __init__(self, name, edible = True):
+        super().__init__(name)
         self.edible = True
 
 
-
 if __name__ == '__main__':
-
     a1 = Predator('Волк с Уолл-Стрит')
     a2 = Mammal('Хатико')
     p1 = Flower('Цветик семицветик')
