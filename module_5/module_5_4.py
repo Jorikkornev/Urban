@@ -7,9 +7,6 @@ class House:
 
     def __init__(self, *args, **kwargs):
         self.house_addr, self.number_of_floors = args
-        house_addr = None
-        number_of_floors = args[1]
-
 
     def go_to(self, new_floor):
         if new_floor < 1 or new_floor > self.number_of_floors:
