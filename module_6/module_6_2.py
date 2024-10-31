@@ -64,6 +64,7 @@ class Sedan(Vehicle):
         print(f'Владелец: {self._owner}')
         print(f'Количество пассажиров: {self.__PASSENGERS_LIMIT}')
 
+    """
     def set_color(self, new_color: str) -> None:
         for color in self.COLOR_VARIANTS:
             if new_color.lower() == color.lower():
@@ -71,7 +72,7 @@ class Sedan(Vehicle):
                 return print(f'Цвет сменен на {new_color}')
             else:
                 return print(f"Нельзя сменить цвет на {new_color}")
-
+    """
 
 if __name__ == '__main__':
     # Мои тесты
